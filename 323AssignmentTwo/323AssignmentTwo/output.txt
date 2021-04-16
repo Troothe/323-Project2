@@ -1,0 +1,168 @@
+
+Token: Keyword:        Lexeme:    int
+<Statement List>-><MoreStatement>
+<MoreStatement>-><Statement><MoreStatement>
+<Statement>-><Declaration>
+<Declaration>-><DataType><Id><MoreIds>;
+<DataType>->int
+
+Token: Identifier:      Lexeme:   x
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   a
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   b
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   z
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   c
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   d
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   e
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   f
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   g
+<Id>->id
+
+Token: seperator :       Lexeme:  ,
+<MoreIds>->,<Id><MoreIds>
+
+Token: Identifier:      Lexeme:   n
+<Id>->id
+
+Token: seperator :       Lexeme:  ;
+<MoreIds>->Epsilon
+
+Token: Identifier:      Lexeme:   x
+<MoreStatement>-><Statement><MoreStatement>
+<Statement>-><Assign>
+<Assign>-><Id>=<Expression>;
+<Id>->id
+
+Token: Operator:        Lexeme:   =
+
+Token: Identifier:      Lexeme:   a
+<Expression>-><Term><Expression Prime>
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: Operator:        Lexeme:   +
+<Term Prime>->Epsilon
+<Expression Prime>->+<Term><Expression Prime>
+
+Token: Identifier:      Lexeme:   b
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: seperator :       Lexeme:  ;
+<Term Prime>->Epsilon
+<Expression Prime>->Epsilon
+
+Token: Identifier:      Lexeme:   z
+<MoreStatement>-><Statement><MoreStatement>
+<Statement>-><Assign>
+<Assign>-><Id>=<Expression>;
+<Id>->id
+
+Token: Operator:        Lexeme:   =
+
+Token: Identifier:      Lexeme:   c
+<Expression>-><Term><Expression Prime>
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: Operator:        Lexeme:   +
+<Term Prime>->Epsilon
+<Expression Prime>->+<Term><Expression Prime>
+
+Token: Identifier:      Lexeme:   d
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: seperator :       Lexeme:  ;
+<Term Prime>->Epsilon
+<Expression Prime>->Epsilon
+
+Token: Identifier:      Lexeme:   a
+<MoreStatement>-><Statement><MoreStatement>
+<Statement>-><Assign>
+<Assign>-><Id>=<Expression>;
+<Id>->id
+
+Token: Operator:        Lexeme:   =
+
+Token: Identifier:      Lexeme:   e
+<Expression>-><Term><Expression Prime>
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: Operator:        Lexeme:   -
+<Term Prime>->Epsilon
+<Expression Prime>->-<Term><Expression Prime>
+
+Token: Identifier:      Lexeme:   f
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: seperator :       Lexeme:  ;
+<Term Prime>->Epsilon
+<Expression Prime>->Epsilon
+
+Token: Identifier:      Lexeme:   b
+<MoreStatement>-><Statement><MoreStatement>
+<Statement>-><Assign>
+<Assign>-><Id>=<Expression>;
+<Id>->id
+
+Token: Operator:        Lexeme:   =
+
+Token: Identifier:      Lexeme:   g
+<Expression>-><Term><Expression Prime>
+<Term>-><Factor><Term Prime>
+<Factor>->id
+
+Token: Operator:        Lexeme:   *
+<Term Prime>->*<Factor><Term Prime>
+
+Token: Identifier:      Lexeme:   n
+<Factor>->id
+
+Token: seperator :       Lexeme:  ;
+<Term Prime>->Epsilon
+<Expression Prime>->Epsilon
+<MoreStatement>->Epsilon
+---------------------------------------------
+The source code contains valid syntax.
